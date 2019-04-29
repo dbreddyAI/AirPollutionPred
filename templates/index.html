@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Air Pollution level</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            background: rgba(15, 136, 250, 0.884);
+            background: -webkit-linear-gradient(to right, rgba(15, 136, 250, 0.884), rgba(34, 255, 134, 0.8));
+            background: linear-gradient(to right, rgba(15, 136, 250, 0.884), rgba(34, 255, 134, 0.8));
+        }
+ 
+       
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="text-align:center; border 2px solid white;">Fill meterological data to get PM2.5 level:</h1>
+        </div>
+        <hr/>
+        <br/>
+        <form action="/airpoll/result" method="POST">
+
+
+            <div class="form-group">
+                <input class="form-control" type="text" name="inp1" placeholder="temperature(C)" />
+                <input class="form-control" type="text" name="inp2" placeholder="humidity" />
+                <input class="form-control" type="text" name="inp3" placeholder="pressure" />
+                <input class="form-control" type="text" name="inp4" placeholder="dewpoint" />
+                <input class="form-control" type="text" name="inp5" placeholder="precipitation" />
+                <input class="form-control" type="text" name="inp6" placeholder="NW wind speed" />
+                <input class="form-control" type="text" name="inp7" placeholder="NE wind speed" />
+                <input class="form-control" type="text" name="inp8" placeholder="SE wind speed" />
+                <input class="form-control" type="text" name="inp9" placeholder="SW wind speed" />
+                <br/>
+                <input class="btn btn-block btn-success" type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
